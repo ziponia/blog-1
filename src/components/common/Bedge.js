@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import theme from "../../static/theme";
 
-const Bedge = props => {
-  return <BedgeStyled className={`${props.className}`}>Category</BedgeStyled>;
+const Bedge = (props) => {
+  return (
+    <BedgeStyled className={`${props.className}`}>{props.title}</BedgeStyled>
+  );
+};
+
+Bedge.defaultProps = {
+  title: "Category",
 };
 
 const BedgeStyled = styled.button`

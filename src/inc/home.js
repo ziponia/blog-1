@@ -4,12 +4,11 @@ import "../App.css";
 import "../index.css";
 import theme from "../static/theme";
 import { CustomPlaceholder } from "react-placeholder-image";
-import {} from "react-icons/fi";
 import { PostCard } from "../components/common/index";
 import { PostList, Side } from "../components/home/index";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-const Home = props => {
+const Home = (props) => {
   return (
     <HomeLayoutStyled>
       <PopularStyled>
